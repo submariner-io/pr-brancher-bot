@@ -108,9 +108,8 @@ func openOrSync(gitRepo *git.Git, pr *github.PullRequestPayload, gh ghclient.GH)
 	var infoMsg string
 	if branches[versionBranch] == nil {
 		infoMsg = fmt.Sprintf("Created branch: %s %s", versionBranch, readyToReviewMsg)
+		klog.Info(infoMsg)
 	}
-
-	klog.Infof(infoMsg)
 
 	if err = gitRepo.Push(versionBranch); err != nil {
 		klog.Errorf("Error pushing origin with the new branch: %s", err)
