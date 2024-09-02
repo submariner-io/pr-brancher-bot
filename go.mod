@@ -4,7 +4,7 @@ go 1.22.0
 
 require (
 	github.com/go-git/go-git/v5 v5.12.0
-	github.com/go-playground/webhooks/v6 v6.3.0
+	github.com/go-playground/webhooks/v6 v6.4.0
 	github.com/google/go-github/v28 v28.1.1
 	github.com/sethvargo/go-password v0.3.1
 	golang.org/x/crypto v0.26.0
